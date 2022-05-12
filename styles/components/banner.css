@@ -1,22 +1,36 @@
 .banner {
-  background-image: url('../../images/background.jpg');
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url('../../images/background.jpg');
   height: 720px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+/* .banner__gradient {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.9) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+} */
+.banner__content {
+  margin-left: 70px;
 }
 
 .banner__title {
   font-size: 65px;
   line-height: 72px;
   letter-spacing: -1.5px;
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 20px;
 }
 
 .banner__subtitle {
   font-size: 20px;
   line-height: 32px;
-  color: #ffffff;
+  color: var(--color-white);
+  margin-bottom: 40px;
 }
