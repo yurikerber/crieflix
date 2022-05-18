@@ -3,6 +3,13 @@
   height: 290px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
   position: relative;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.cover--large {
+  width: 400px;
+  height: 240px;
 }
 
 .cover__image {
